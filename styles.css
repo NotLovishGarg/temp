@@ -1,0 +1,126 @@
+.custom-link {
+
+    font-family: 'Lucida sans'; /* Change to your preferred font */
+    font-size: 2.5rem; /* Adjust the font size as needed */
+    font-weight: bold;
+    color: #333; /* Dark text color */
+    text-decoration: none; /* Remove the default underline */
+    padding: 10px 15px; /* Add some padding for better spacing */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition effect */
+    margin: 10px;
+  }
+  
+  /* Hover effect */
+  .custom-link:hover {
+    color: #0056b3; /* Change text color on hover */
+    text-decoration: underline;
+    font-size: larger;
+    font-weight: bold; /* Underline text on hover */
+  }
+
+  .navbar-translucent {
+    background-color: rgba(255, 255, 255, 0.85); /* White with 80% opacity */
+    backdrop-filter: blur(10px); /* Optional: Adds a blur effect to the background */
+}
+
+.button-custom{
+    padding: 10px 15px; /* Add some padding for better spacing */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition effect */
+    margin: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.button-custom:hover{
+    color: aliceblue;
+    font-size: large;
+    font-weight: bold;
+
+}
+.btn-login{
+    color: #333;
+    padding: 10px 15px; /* Add some padding for better spacing */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition effect */
+    margin: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.btn-login:hover{
+    color: aliceblue;
+    font-size: large;
+    font-weight: bold;
+
+}
+.content-section {
+    padding-top: 5rem; /* Adjust this value based on the height of your navbar */
+}
+.hidden {
+    opacity: 0; /* Fade out effect */
+    visibility: hidden; /* Prevents interaction */
+}
+#nav-example {
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* Add transition for opacity and visibility */
+}
+
+.card-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 60vh; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.5); /* Transparent background */
+    border: none;
+    cursor: pointer;
+    font-size: 2rem; /* Adjust size as needed */
+    z-index: 10; /* Ensure buttons are above cards */
+    padding: 0 10px;
+}
+.left {
+    left: 10px; /* Position left button */
+}
+
+.right {
+    right: 10px; /* Position right button */
+}
+
+.card-container {
+    display: flex;
+    transition: transform 0.5s ease; /* Smooth transition for sliding effect */
+    width: calc(300%);
+}
+
+.card-sl {
+    min-width: calc(100% / 3); /* Adjust according to the number of cards */
+    flex-shrink: 0;
+    transition: transform 0.5s ease, filter 0.5s ease;
+    transform: scale(0.8); /* Smaller size for non-active cards */
+    filter: blur(2px); /* Blurred non-active cards */
+    opacity: 0.5; /* Make non-active cards semi-transparent */
+
+}
+
+
+.card.active {
+    transform: scale(1); /* Normal size for active card */
+    filter: blur(0); /* No blur for active card */
+    opacity: 1; /* Fully opaque active card */
+}
+
+.btn-submit{
+    background-color: rgb(255, 255, 255) !important;
+    color: black !important;
+    border-radius: 2%;
+    padding: 10px 15px; /* Add some padding for better spacing */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition effect */
+    margin: 5px;
+    font-weight: bold;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.btn-submit:hover{
+    font-weight: bolder;
+    font-size: larger;
+}
